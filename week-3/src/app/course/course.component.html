@@ -1,0 +1,7 @@
+<h1 class="mat-h1">Courses</h1>
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+  <mat-card fxFlex="100%" *ngFor="let course of courses">
+    <mat-card-title>{{course.name}}</mat-card-title>
+    <mat-card-subtitle>{{course.location}}</mat-card-subtitle>
+  </mat-card>
+</div>

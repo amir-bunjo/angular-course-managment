@@ -1,0 +1,9 @@
+<div fxLayout="row" class="header" >
+  <h1 class="mat-h1">{{title}}</h1>
+  <button mat-raised-button color="primary" (click)="addNew()" *ngIf="!prekidac; else other" ><mat-icon  >person_add</mat-icon> </button>
+
+  <ng-template #other> 
+  <button mat-raised-button color="primary" (click)="addNew()" >+add</button>
+</ng-template>
+
+</div>
